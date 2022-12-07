@@ -58,8 +58,8 @@ def calculatePriorityScoreElfGroup(inputFile):
 
 #Teil1
 score1 = calculatePriorityScore('input day3')
-print(score1)
+print("Die Gesamtpriorität beträgt: " + str(score1) + ".")
 
 #Teil2
 score2 = calculatePriorityScoreElfGroup('input day3')
-print(score2)
+print("Die Gesamtgruppenpriorität beträgt: " + str(score2) + ".")

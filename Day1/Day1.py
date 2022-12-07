@@ -29,7 +29,7 @@ def sumOfHighestThree(array):
     return sumOfCalories
 
 #Teil1:
-datalist = arrayifyCalories('input day1')
+datalist = arrayifyCalories('input day5 day1')
 print(datalist)
 maximum = max(datalist)
 index = datalist.index(maximum)

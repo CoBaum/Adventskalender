@@ -89,10 +89,10 @@ def calculateContainsPartially(inputFile):
     return count
 
 #Teil1
-anzahl1 = calculateContainsFully('input day4')
+anzahl1 = calculateContainsFully('input day5 day4')
 print("Es gibt " + str(anzahl1) + " voll überlappende Gruppen.")
 
 #Teil2
-anzahl2 = calculateContainsPartially('input day4')
+anzahl2 = calculateContainsPartially('input day5 day4')
 print("Es gibt " + str(anzahl2) + " teilweise überlappende Gruppen.")
 

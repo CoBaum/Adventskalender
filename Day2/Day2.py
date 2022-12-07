@@ -55,9 +55,9 @@ def calculateScore2(inputFile):
     return totalScore
 
 #Teil1
-score1 = calculateScore1('input day2')
+score1 = calculateScore1('input day5 day2')
 print("\n" + "Nach dem alten Guide komme ich auf eine Punktzahl von insgesamt: " + str(score1) + ".")
 
 #Teil2
-score2 = calculateScore2('input day2')
+score2 = calculateScore2('input day5 day2')
 print("\n" + "Nach dem neuen Guide komme ich auf eine Punktzahl von insgesamt: " + str(score2) + ".")

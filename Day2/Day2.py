@@ -1,8 +1,8 @@
 #Teil1
-scores_shape = {"X": 1, "Y": 2, "Z": 3}
-scores_outcome = {"loss": 0, "win": 6, "draw": 3}
+scoresShape = {"X": 1, "Y": 2, "Z": 3}
+scoresOutcome = {"loss": 0, "win": 6, "draw": 3}
 #Teil2
-outcome_decider = {"X": "loss", "Y": "draw", "Z": "win"}
+outcomeDecider = {"X": "loss", "Y": "draw", "Z": "win"}
 
 #Teil1
 def calculateScore1(inputFile):
@@ -24,7 +24,7 @@ def calculateScore1(inputFile):
         else:
             outcome = "win"
 
-        totalScore += scores_shape[myChoice] + scores_outcome[outcome]
+        totalScore += scoresShape[myChoice] + scoresOutcome[outcome]
 
     return totalScore
 
@@ -48,8 +48,8 @@ def calculateScore2(inputFile):
         else:
             myChoice = "Z"
 
-        thisOutcome = outcome_decider[outcomeKey]
-        totalScore += scores_shape[myChoice] + scores_outcome[thisOutcome]
+        thisOutcome = outcomeDecider[outcomeKey]
+        totalScore += scoresShape[myChoice] + scoresOutcome[thisOutcome]
 
 
     return totalScore

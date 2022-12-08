@@ -1,19 +1,19 @@
 #Teil1:
 def arrayifyCalories(inputFile):
     file = open(inputFile, 'r')
-    Lines = file.readlines()
+    lines = file.readlines()
 
     sumCalories = 0
     array = []
 
-    for line in Lines:
+    for line in lines:
         if line.strip() == "":
             array.append(sumCalories)
             sumCalories = 0
 
         else:
-            line_value = int(line.strip())
-            sumCalories += line_value
+            lineValue = int(line.strip())
+            sumCalories += lineValue
 
     return array
 

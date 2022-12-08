@@ -1,6 +1,6 @@
 #Teil1
 
-scores_priorities = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6, "g": 7, "h": 8, "i": 9, "j": 10, "k": 11, "l": 12, "m": 13, "n": 14, "o": 15, "p": 16, "q": 17, "r": 18, "s": 19, "t": 20, "u": 21, "v": 22, "w": 23, "x": 24, "y": 25, "z": 26}
+scoresPriorities = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6, "g": 7, "h": 8, "i": 9, "j": 10, "k": 11, "l": 12, "m": 13, "n": 14, "o": 15, "p": 16, "q": 17, "r": 18, "s": 19, "t": 20, "u": 21, "v": 22, "w": 23, "x": 24, "y": 25, "z": 26}
 
 #Teil1
 def calculatePriorityScore(inputFile):
@@ -21,10 +21,10 @@ def calculatePriorityScore(inputFile):
             if secondCompartment.find(currentCharacter) != -1:
                 priority = currentCharacter
                 if priority.isupper():
-                    totalPriorityScore += scores_priorities[priority.lower()] + 26
+                    totalPriorityScore += scoresPriorities[priority.lower()] + 26
                     break
                 else:
-                    totalPriorityScore += scores_priorities[priority]
+                    totalPriorityScore += scoresPriorities[priority]
                     break
 
     return totalPriorityScore
@@ -48,10 +48,10 @@ def calculatePriorityScoreElfGroup(inputFile):
             if (lineArray[1].find(currentCharacter) != -1) & (lineArray[2].find(currentCharacter) != -1):
                 priority = currentCharacter
                 if priority.isupper():
-                    totalPriorityScoreElfGroup += scores_priorities[priority.lower()] + 26
+                    totalPriorityScoreElfGroup += scoresPriorities[priority.lower()] + 26
                     break
                 else:
-                    totalPriorityScoreElfGroup += scores_priorities[priority]
+                    totalPriorityScoreElfGroup += scoresPriorities[priority]
                     break
     return totalPriorityScoreElfGroup
 

@@ -40,4 +40,4 @@ print("Der Start-Of-Packet Marker wird lokalisiert, nachdem " + str(numberOfChar
 
 #Teil2
 numberOfCharactersMessage = solveSignalMessage('input day6')
-print("Der Start-Of-Packet Marker wird lokalisiert, nachdem " + str(numberOfCharactersMessage) + " Zeichen analysiert wurden.")
+print("Der Start-Of-Messages Marker wird lokalisiert, nachdem " + str(numberOfCharactersMessage) + " Zeichen analysiert wurden.")

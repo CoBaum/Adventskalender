@@ -12,9 +12,9 @@ crates2 = {1: ['C', 'Q', 'B'], 2: ['Z', 'W', 'Q', 'R'], 3: ['V', 'L', 'R', 'M', 
 def crateranking1(inputfile):
     file = open(inputfile, 'r')
     finalRanking = ""
-    Lines = file.readlines()
+    lines = file.readlines()
 
-    for line in Lines[10:]:
+    for line in lines[10:]:
         lineValue = line.strip()
         numbers = ""
 

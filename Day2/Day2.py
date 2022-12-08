@@ -8,9 +8,9 @@ outcomeDecider = {"X": "loss", "Y": "draw", "Z": "win"}
 def calculateScore1(inputFile):
     file = open(inputFile, 'r')
     totalScore = 0
-    Lines = file.readlines()
+    lines = file.readlines()
 
-    for line in Lines:
+    for line in lines:
         line_value = line.strip()
         myChoice = line_value[2]
         opChoice = line_value[0]

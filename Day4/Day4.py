@@ -2,9 +2,9 @@
 def calculateContainsFully(inputFile):
     file = open(inputFile, 'r')
     count = 0
-    Lines = file.readlines()
+    lines = file.readlines()
 
-    for line in Lines:
+    for line in lines:
         lineValue = line.strip()
         positionComma = lineValue.index(",")
         elf1 = lineValue[:positionComma]

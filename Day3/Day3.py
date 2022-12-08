@@ -5,10 +5,10 @@ scoresPriorities = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6, "g": 7, "h":
 #Teil1
 def calculatePriorityScore(inputFile):
     file = open(inputFile, 'r')
-    Lines = file.readlines()
+    lines = file.readlines()
     totalPriorityScore = 0
 
-    for line in Lines:
+    for line in lines:
         lineValue = line.strip()
 
 
